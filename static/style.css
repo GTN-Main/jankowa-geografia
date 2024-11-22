@@ -1,0 +1,97 @@
+@font-face {
+	font-family: 'Dongle';
+	src: url('/static/Dongle.woff2') format('woff2');
+	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100dvh;
+	color: #fff;
+	font-family: 'Dongle', sans-serif;
+	flex-direction: column;
+	text-align: center;
+	overflow: clip;
+}
+
+.background {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+.container {
+	z-index: 1;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+.form-cont {
+	display: flex;
+	height: 44px;
+}
+
+input {
+	margin-right: 2px;
+	padding-block: 10px;
+	padding-inline: 20px;
+	border-radius: 50px;
+	font-size: 17px;
+	border: #c960e5 2px solid;
+	background: #ffffff33;
+	color: #da70d6;
+	transition: box-shadow ease-in-out 100ms;
+
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 15px 3px #c960e5;
+		text-shadow: #b850b4 0 0 1px;
+	}
+}
+
+button {
+	margin-left: 2px;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 50px;
+	border: #c960e5 2px solid;
+	background: #ffffff33;
+	color: #da70d6;
+	transition: box-shadow ease-in-out 100ms;
+
+	&:hover {
+		box-shadow: 0 0 15px 3px #c960e5;
+	}
+}
+
+.invalid, .info {
+	font-size: 19px;
+	margin-top: 10px;
+	color: gray;
+}
+
+.invalid {
+	color: red;
+}
+
+.qr {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 300px;
+}
