@@ -34,6 +34,7 @@ body {
 h1 {
 	font-size: 50px;
 	color: #ccc;
+	user-select: none;
 }
 
 .form-cont {
@@ -90,6 +91,7 @@ button {
 	max-width: 500px;
 	color: gray;
 	overflow-wrap: break-word;
+	user-select: none;
 }
 
 .invalid {
