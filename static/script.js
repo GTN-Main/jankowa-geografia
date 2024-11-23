@@ -23,13 +23,43 @@ function submit() {
 				document.querySelector('#qr').style.top = '60dvh';
 				document.querySelector('#qr').style.height = '0';
 				document.querySelector('#qr').style.opacity = '0';
-				document.querySelector('#form-cont').classList.add('shake');
-				document.querySelector('#form-cont').style.boxShadow = "0 0 15px 3px #c00";
-				document.querySelector('#form-cont').style.border = "#c00 2px solid";
+				document.querySelector('#form-cont').animate(
+					[
+						{
+							transform: "translateX(0)",
+							boxShadow: "0 0 15px 3px #c00",
+							border: "#c00 2px solid",
+							color: "#c00"
+						},
+						{
+							transform: "translateX(-10px)"
+						},
+						{
+							transform: "translateX(10px)"
+						},
+						{
+							transform: "translateX(-10px)"
+						},
+						{
+							transform: "translateX(0)",
+							boxShadow: "0 0 15px 3px #c00",
+							border: "#c00 2px solid",
+							color: "#c00"
+						}
+					], 500
+				)
+				document.querySelector('#arrow').animate(
+					[
+						{
+							filter: "brightness(0) saturate(100%) invert(12%) sepia(96%) saturate(4870%) hue-rotate(4deg) brightness(83%) contrast(119%)"
+						},
+						{
+							filter: "brightness(0) saturate(100%) invert(12%) sepia(96%) saturate(4870%) hue-rotate(4deg) brightness(83%) contrast(119%)"
+						}
+					], 500
+				)
 				setTimeout(() => {
 					document.querySelector('#qr').src = '';
-					document.querySelector('#form-cont').classList.remove('shake');
-					document.querySelector('#form-cont').removeAttribute('style');
 				}, 500);
 			}
 			document.querySelector('#info').innerHTML = response.info;
