@@ -16,11 +16,13 @@ function submit() {
 				document.querySelector('#qr').src = response.img;
 				document.querySelector('#qr').style.top = '0';
 				document.querySelector('#qr').style.height = '200px';
+				document.querySelector('#qr').style.opacity = '1';
 			} else {
 				document.querySelector('#info').classList.add('invalid');
 
 				document.querySelector('#qr').style.top = '60dvh';
 				document.querySelector('#qr').style.height = '0';
+				document.querySelector('#qr').style.opacity = '0';
 				document.querySelector('#form-cont').classList.add('shake');
 				document.querySelector('#form-cont').style.boxShadow = "0 0 15px 3px #c00";
 				document.querySelector('#form-cont').style.border = "#c00 2px solid";

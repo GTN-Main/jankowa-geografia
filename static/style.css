@@ -121,6 +121,7 @@ button {
 	margin-top: 20px;
 	box-shadow: #aaaaaaaa 0 0 20px 5px;
 	border: #aaaaaadd 2px solid;
+	opacity: 0;
 }
 
 .shake {
