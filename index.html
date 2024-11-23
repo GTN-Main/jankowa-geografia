@@ -11,7 +11,7 @@
 <body>
 	<div class="container">
 		<h1>Wpisz kod:</h1>
-		<div class="form-cont">
+		<div class="form-cont" id="form-cont">
 			<form autocomplete="off" onsubmit="submit()">
 				<input type="text" name="kod" id="kod" placeholder="sierota" autofocus>
 			</form>
@@ -20,6 +20,8 @@
 
 		<p class="info" id="info">Wpisz kod, aby zobaczyć kod QR.</p>
 	</div>
+
+	<img id="qr" src="" alt="qr">
 
 	<canvas class="background"></canvas>
 	<script src="static/particles.min.js"></script>

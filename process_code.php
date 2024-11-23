@@ -3,7 +3,7 @@
 		$kod = $_POST['kod'];
 
 			if ($kod == "sierota") {
-				$img = "sample.jpg";
+				$img = "qrs/sample.jpg";
 				$info = "Wpisano poprawny kod";
 				$success = true;
 			} elseif ($kod == "") {
