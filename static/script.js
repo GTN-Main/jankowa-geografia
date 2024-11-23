@@ -82,6 +82,32 @@ window.onload = function () {
 		maxParticles: 200,
 		color: ['#600edf', '#00ffb3'],
 		connectParticles: true,
-		speed: 0.4
+		speed: 0.4,
+		responsive: [
+			{
+				breakpoint: 1050,
+				options: {
+					maxParticles: 150
+				}
+			},
+			{
+				breakpoint: 768,
+				options: {
+					maxParticles: 100
+				}
+			},
+			{
+				breakpoint: 425,
+				options: {
+					maxParticles: 50
+				}
+			},
+			{
+				breakpoint: 320,
+				options: {
+					maxParticles: 30
+				}
+			}
+		]
 	});
 };
