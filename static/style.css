@@ -87,7 +87,9 @@ button {
 .invalid, .info {
 	font-size: 19px;
 	margin-top: 10px;
+	max-width: 500px;
 	color: gray;
+	overflow-wrap: break-word;
 }
 
 .invalid {
@@ -96,7 +98,7 @@ button {
 
 #qr {
 	position: relative;
-	width: 200px;
+	width: auto;
 	height: 0;
 	top: 60dvh;
 	transition: 500ms ease-in-out;
@@ -105,4 +107,5 @@ button {
 	box-shadow: #aaaaaaaa 0 0 20px 5px;
 	border: #aaaaaadd 2px solid;
 	opacity: 0;
+	aspect-ratio: 1;
 }
