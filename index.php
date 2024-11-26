@@ -4,8 +4,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Konkurs</title>
 		<link rel="stylesheet" href="static/style.css">
+		<?php
+			if ((isset($_SERVER['HTTP_DNT']) && $_SERVER['HTTP_DNT'] == 0) || !isset($_SERVER['HTTP_DNT'])) {
+				echo "<script defer src=\"https://cloud.umami.is/script.js\" data-website-id=\"bb0c6be7-cc01-477c-a4d3-9b982cf4e332\"></script>";
+			};
+		?>
+		<title>Konkurs</title>
 	</head>
 
 	<body>
