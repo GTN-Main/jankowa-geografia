@@ -9,6 +9,11 @@
 	</head>
 
 	<body>
+		<?php
+			if (isset($_GET['kod'])) {
+				echo "<script>document.addEventListener('DOMContentLoaded', () => {document.getElementById('kod').value = '$_GET[kod]'; submit();});</script>";
+			}
+		?>
 		<div class="container">
 			<h1>Wpisz kod:</h1>
 			<div class="form-cont" id="form-cont">

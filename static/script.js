@@ -1,9 +1,9 @@
 function submit() {
-	const kod = document.querySelector('#kod');
+	const input = document.querySelector('#kod');
 	const formData = new FormData();
 	const request = new XMLHttpRequest();
 
-	formData.append(kod.name, kod.value);
+	formData.append(input.name, input.value);
 	request.open('POST', '/process_code.php');
 	request.send(formData);
 	request.onreadystatechange = () => {
