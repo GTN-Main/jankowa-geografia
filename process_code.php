@@ -5,16 +5,16 @@
 
 		foreach ($arr as $qr) {
 			if ($kod == $qr['code']) {
-				$img = "qrs/" . $qr['name'];
-				$info = "Wpisano poprawny kod";
 				$success = true;
+				$info = "Wpisano poprawny kod";
+				$encoded_img = 'data:image/' . $qr['format'] . ';base64,' . base64_encode(file_get_contents('qrs/' . $qr['name']));
 				break;
 			} elseif ($kod == "") {
+				$success = false;
 				$info = "Najpierw podaj kod!";
-				$success = false;
 			} else {
-				$info = "&quot;$kod&quot; to niepoprawny kod!";
 				$success = false;
+				$info = "&quot;$kod&quot; to niepoprawny kod!";
 			}
 		}
 	} else {
@@ -25,7 +25,7 @@
 	$output = array(
 		'success' => $success,
 		'info' => $info,
-		'img' => $img ?? null
+		'img' => $encoded_img ?? null
 	);
 
 	echo json_encode($output);

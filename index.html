@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Konkurs</title>
-	<link rel="stylesheet" href="static/style.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Konkurs</title>
+		<link rel="stylesheet" href="static/style.css">
+	</head>
 
-<body>
-	<div class="container">
-		<h1>Wpisz kod:</h1>
-		<div class="form-cont" id="form-cont">
-			<form autocomplete="off" onsubmit="submit()">
-				<input type="text" name="kod" id="kod" placeholder="sierota" autofocus>
-			</form>
-			<button onclick="submit()"><img src="static/arrow.svg" alt="prześlij" id="arrow"></button>
+	<body>
+		<div class="container">
+			<h1>Wpisz kod:</h1>
+			<div class="form-cont" id="form-cont">
+				<form autocomplete="off" onsubmit="submit()">
+					<input type="text" name="kod" id="kod" placeholder="sierota" autofocus>
+				</form>
+				<button onclick="submit()"><img src="static/arrow.svg" alt="prześlij" id="arrow"></button>
+			</div>
+
+			<p class="info" id="info">Wpisz kod, aby zobaczyć kod QR.</p>
 		</div>
 
-		<p class="info" id="info">Wpisz kod, aby zobaczyć kod QR.</p>
-	</div>
+		<img id="qr" src="" alt="qr">
 
-	<img id="qr" src="" alt="qr">
-
-	<canvas class="background"></canvas>
-	<script src="static/particles.min.js"></script>
-	<script src="static/script.js"></script>
-</body>
+		<canvas class="background"></canvas>
+		<script src="static/particles.min.js"></script>
+		<script src="static/script.js"></script>
+	</body>
 
 </html>

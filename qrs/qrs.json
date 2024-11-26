@@ -1,10 +1,12 @@
 [
 	{
 		"code": "sierota",
-		"name": "sample.jpg"
+		"name": "sample.jpg",
+		"format": "jpeg"
 	},
 	{
 		"code": "radaś",
-		"name": "sample2.jpg"
+		"name": "sample2.jpg",
+		"format": "jpeg"
 	}
 ]
