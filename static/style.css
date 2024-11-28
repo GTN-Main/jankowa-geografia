@@ -23,6 +23,12 @@ body {
 	overflow: clip;
 }
 
+.container {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .background {
 	position: absolute;
 	display: block;
@@ -75,6 +81,7 @@ button {
 	aspect-ratio: 1;
 	height: 60%;
 	margin-right: 8px;
+	user-select: none;
 
 	&:hover {
 		scale: 1.5;

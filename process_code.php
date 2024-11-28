@@ -14,7 +14,7 @@
 				$info = "Najpierw podaj kod!";
 			} else {
 				$success = false;
-				$info = "&quot;$kod&quot; to niepoprawny kod!";
+				$info = "&quot;" . ((strlen($kod) > 103) ? substr($kod, 0, 100) . '…' : $kod) . "&quot; to niepoprawny kod!";
 			}
 		}
 	} else {
