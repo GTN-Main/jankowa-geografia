@@ -60,7 +60,8 @@ h1 {
 }
 
 input {
-	padding-inline: 20px;
+	padding-left: 20px;
+	padding-right: 13px;
 	padding-block: 10px;
 	background: none;
 	border: none;
