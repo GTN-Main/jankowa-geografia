@@ -120,8 +120,37 @@ button {
 	aspect-ratio: 1;
 	image-rendering: crisp-edges;
 }
+
 @supports not (image-rendering: crisp-edges) {
 	#qr {
 		image-rendering: pixelated;
+	}
+}
+
+.source {
+	display: block;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	background: #9630b2;
+	color: #fff;
+	padding: 15px;
+	border-radius: 50px;
+	height: 50px;
+	aspect-ratio: 1;
+	transition: 100ms ease-in-out;
+
+	&:hover {
+		background: #a842c4;
+
+		img {
+			scale: 1.5;
+		}
+	}
+	&:active {
+		background: #a741c3;
+	}
+	img {
+		transition: 100ms ease-in-out;
 	}
 }
