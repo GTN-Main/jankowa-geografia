@@ -10,7 +10,7 @@
 				echo "<script defer src=\"https://cloud.umami.is/script.js\" data-website-id=\"bb0c6be7-cc01-477c-a4d3-9b982cf4e332\"></script>";
 			};
 		?>
-		<title>Konkurs</title>
+		<title>Konkurs | GeoQR 🌍</title>
 	</head>
 
 	<body>
