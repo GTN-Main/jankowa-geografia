@@ -15,7 +15,7 @@ function submit() {
 
 				document.querySelector('#qr').src = response.img;
 				document.querySelector('#qr').style.top = '0';
-				document.querySelector('#qr').style.height = '200px';
+				document.querySelector('#qr').style.height = '300px';
 				document.querySelector('#qr').style.opacity = '1';
 			} else {
 				document.querySelector('#info').classList.add('invalid');
